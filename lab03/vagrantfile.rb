@@ -18,8 +18,8 @@ Vagrant.configure("2") do |config|
       cd /var/www/html
       sudo rm index.html
       sudo cp -a ~/Cliente/CloudBasedClock/estaticos/requester.js /var/www/html
-      sudo cp -a ~/Cliente/CloudBasedClock/estaticos/index.html /var/www/html
-      sudo cp -a ~/Cliente/CloudBasedClock/estaticos/css /var/www/html
+      sudo cp -a ~/Cliente/CloudBasedClock/estaticos/index.ejs /var/www/html
+      sudo cp -a ~/Cliente/CloudBasedClock/estaticos/style.css /var/www/html
     SHELL
   end
   config.vm.define "clock" do |clock|
